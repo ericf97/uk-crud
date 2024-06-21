@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "4ee6f0d8-0dcc-4248-8213-989871787d50",
+		"name": "uk crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5259870"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"name\": \"mi nikessssss\",\n    \"price\": 32.11,\n    \"stock\": 9999999999999999999899999,\n    \"category\": \"shoes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{urlBase}}/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{urlBase}}/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GET BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{urlBase}}/products/6675af4da462520c2b7523c5"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE PRODUCT",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nike Air Jordan 1\",\n    \"price\": 55.22,\n    \"stock\": 1,\n    \"category\": \"shoes\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{urlBase}}/products/6675af4da462520c2b7523c5"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PRODUCT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{urlBase}}/products/6675b60b9fd5e88d21722cd8"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "urlBase",
+			"value": "localhost:3000"
+		}
+	]
+}
